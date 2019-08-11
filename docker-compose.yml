@@ -1,0 +1,13 @@
+version: '3'
+services:
+  comp_news:
+    build: comp_news_docker
+    ports:
+    - 8081:8081
+    restart: always
+  static:
+    build: static_docker
+    ports:
+    - 8080:80
+
+    
